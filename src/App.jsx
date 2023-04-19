@@ -1,9 +1,14 @@
 import "src/index.css";
+import Menu from "components/Menu";
+import Dashboard from "components/Dashboard";
 
-function App() {
+const App = () => {
   return (
-    <div className="App" />
+    <div className="App">
+      <Menu />
+      <Dashboard/>
+    </div>
   );
-}
+};
 
 export default App;
