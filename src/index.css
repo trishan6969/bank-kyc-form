@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    @apply flex items-start justify-start
+}
+
+.section-heading {
+    @apply font-bold text-2xl
+}
+
+.form {
+    @apply w-11/12 m-16 bg-grey rounded-md p-14
+}
+
+.input-container, .select-container{
+    @apply flex flex-col gap-2
+}
+
+.input-field,
+.select-field {
+    @apply w-full py-2 px-4 bg-transparent outline-none outline-1 outline-gray-400 rounded-md focus:outline-2 focus:outline-blue-500 invalid:outline-primary
+}
+
+.error{
+    @apply text-sm invisible peer-invalid:visible peer-focus:invisible text-primary mt-1
+}

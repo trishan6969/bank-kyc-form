@@ -6,6 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: ["Poppins"]
+      },
+      colors: {
+        primary: "#ff1717",
+        secondary: "#d32b2b",
+        dark: "#212b35",
+        grey: "#f4f5f7"
+      },
+      height: {
+        "47rem": "47rem"
+      }
     },
   },
   plugins: [],
