@@ -1,5 +1,5 @@
 const Header = () =>
-    <div className="header flex justify-between w-full bg-grey p-6 items-center sticky top-0 border-b-2">
+    <div className="sticky top-0 flex items-center justify-between w-full p-6 border-b-2 header bg-grey">
         <p className="text-2xl font-bold">KYC Verification</p>
         <img
             className="w-12 rounded-full cursor-pointer"

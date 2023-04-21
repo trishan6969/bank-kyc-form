@@ -28,9 +28,17 @@
 
 .input-field,
 .select-field {
-    @apply w-full py-2 px-4 bg-transparent outline-none outline-1 outline-gray-400 rounded-md focus:outline-2 focus:outline-blue-500 invalid:outline-primary
+    @apply w-full py-2 px-4 bg-transparent outline-none outline-1 outline-gray-400 rounded-md focus:outline-2 focus:outline-blue-500
 }
 
 .error{
-    @apply text-sm invisible peer-invalid:visible peer-focus:invisible text-primary mt-1
+    @apply text-sm text-primary mt-1
+}
+
+.upload-file{
+    @apply flex flex-col items-center justify-center min-w-full min-h-16rem w-fit mb-6 bg-transparent border-2 border-gray-400 border-dashed rounded-lg pb-10 px-10
+}
+
+.file-input{
+    @apply block w-fit pr-8 text-sm text-white rounded-full file:cursor-pointer file:transition file:ease-in bg-dark file:mr-4 file:py-2 file:px-4 file:font-primary file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-secondary
 }
