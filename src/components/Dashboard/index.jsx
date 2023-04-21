@@ -1,14 +1,10 @@
 import Header from "components/Dashboard/Header";
-import KycForm from "components/Dashboard/Form";
+import Form from "components/Dashboard/KycForm";
 
-const Dashboard = () => {
-    return (
-        <div className="dashboard flex flex-col w-full justify-center items-center font-primary">
-            <Header />
-            <KycForm/>
-        </div>
-
-    );
-};
+const Dashboard = () =>
+    <div className="flex flex-col items-center justify-center w-full dashboard font-primary">
+        <Header />
+        <Form />
+    </div>;
 
 export default Dashboard;

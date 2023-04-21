@@ -1,4 +1,4 @@
-const formInputConfig = {
+const formConfig = {
     sections: [
         {
             id: 1,
@@ -9,10 +9,8 @@ const formInputConfig = {
                     name: "fullName",
                     type: "text",
                     label: "Full Name",
-                    required: true,
                     placeholder: "Enter your full name",
-                    pattern: "^[a-zA-Z0-9]{3,10}$",
-                    errorMessage: "Must be 3-10 characters and can't include any special characters"
+
                 },
                 {
                     id: 12,
@@ -34,25 +32,19 @@ const formInputConfig = {
                             value: "others", label: "Others"
                         },
                     ],
-                    required: true,
-                    errorMessage: "You must select your gender"
                 },
                 {
                     id: 13,
                     name: "dob",
                     type: "date",
                     label: "DOB",
-                    required: true,
-                    errorMessage: "Date of Birth must be selected"
                 },
                 {
                     id: 14,
                     name: "fatherName",
                     type: "text",
                     label: "Father Name",
-                    required: true,
                     placeholder: "Enter your father's name",
-                    errorMessage: "Father's name is required"
                 },
                 {
                     id: 15,
@@ -117,27 +109,20 @@ const formInputConfig = {
                             value: "self", label: "Self Employed"
                         },
                     ],
-                    required: true,
-                    errorMessage: "Occupation Field must be selected"
                 },
                 {
                     id: 18,
                     name: "emailAddress",
-                    type: "email",
+                    type: "text",
                     label: "Email Address",
-                    required: true,
                     placeholder: "Enter your email address",
-                    errorMessage: "Email Address must be valid"
                 },
                 {
                     id: 19,
                     name: "contactNumber",
-                    type: "number",
+                    type: "text",
                     label: "Contact Number",
-                    required: true,
                     placeholder: "Enter your contact number",
-                    errorMessage: "Phone number must be valid",
-                    pattern: "^[0-9]+$"
                 },
             ],
         },
@@ -178,37 +163,27 @@ const formInputConfig = {
                             value: "sudurpashchim", label: "Sudurpashchim"
                         },
                     ],
-                    required: true,
-                    errorMessage: "State is a required field"
                 },
                 {
                     id: 22,
                     name: "district",
                     type: "text",
                     label: "District",
-                    required: true,
                     placeholder: "Enter your district name",
-                    errorMessage: "District is a required field"
-
                 },
                 {
                     id: 23,
                     name: "municipality",
                     type: "text",
                     label: "Municipality",
-                    required: true,
                     placeholder: "Enter your municipality name",
-                    errorMessage: "Municipality is a required field"
                 },
                 {
                     id: 24,
                     name: "wardNumber",
-                    type: "number",
+                    type: "text",
                     label: "Ward No",
-                    required: true,
                     placeholder: "Enter your Ward Number",
-                    errorMessage: "Ward Number must be valid",
-                    pattern: "^[0-9]+$"
                 },
                 {
                     id: 25,
@@ -244,60 +219,36 @@ const formInputConfig = {
                             value: "passport", label: "Passport"
                         },
                     ],
-                    required: true,
-                    errorMessage: "You must select your document type"
                 },
                 {
                     id: 32,
                     name: "citizenshipNumber",
-                    type: "number",
+                    type: "text",
                     label: "Citizenship No",
-                    required: true,
                     placeholder: "Enter your citizenship number",
-                    pattern: "^[0-9]+$",
-                    errorMessage: "Citizenship Number must be valid"
                 },
                 {
                     id: 33,
                     name: "issuedDistrict",
                     type: "text",
                     label: "Issued District",
-                    required: true,
                     placeholder: "Enter your citizenship issued district",
-                    errorMessage: "Issued District is a required field"
                 },
                 {
                     id: 34,
                     name: "dateOfIssue",
                     type: "date",
                     label: "Date of Issue",
-                    required: true,
-                    errorMessage: "Date of Issue must be selected"
+                },
+                {
+                    id: 35,
+                    name: "profilePicture",
+                    type: "file",
+                    label: "your profile picture (optional)"
                 },
             ]
         }
     ]
 };
 
-const data = {
-    fullName: "",
-    gender: "",
-    dob: "",
-    fatherName: "",
-    grandFatherName: "",
-    maritalStatus: "",
-    "occupation-field": "",
-    emailAddress: "",
-    contactNumber: "",
-    state: "",
-    district: "",
-    municipality: "",
-    wardNumber: "",
-    toleName: "",
-    documentType: "",
-    citizenshipNumber: "",
-    issuedAddress: "",
-    dateOfIssue: "",
-};
-
-export { formInputConfig, data };
+export default formConfig;

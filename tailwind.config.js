@@ -17,8 +17,10 @@ export default {
       },
       height: {
         "47rem": "47rem"
+      },
+      minHeight: {
+        "16rem": "16rem"
       }
     },
   },
-  plugins: [],
 };
